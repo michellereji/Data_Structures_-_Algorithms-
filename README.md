@@ -1,2 +1,2 @@
-# Data_Structures_Algorithms-
+# Data_Structures_Algorithms
 Building strong algorithmic foundations, one data structure at a time — starting from arrays.
