@@ -12,14 +12,23 @@ int main()
     }
     printf("Enter the position of the element to be deleted: ");
     scanf("%d",&pos);
-    item=a[pos-1];
-    printf("Element to be deleted: %d\n",item);
-
-    for(i=pos-1;i<n-1;i++)
+    if(pos<1 || pos>n)
     {
-        a[i]=a[i+1];
+        printf("Invalid position\n");
+        return 0;
     }
-    n--;
+    else
+    {
+        item=a[pos-1];
+        printf("Element to be deleted: %d\n",item);
+
+        for(i=pos-1;i<n-1;i++)
+         {
+            a[i]=a[i+1];
+         }
+         n--;
+        }
+        
     printf("Array after deletion: ");   
     for(i=0;i<n;i++)
     {
